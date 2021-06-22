@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sso?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+logging:
+  level:
+    com.wen.sso.auth: debug
+
+rsa:
+  key:
+    # 私钥文件路径
+    privateKeyFilePath: D:\Users\Administrator\IdeaProjects\sso\common\src\main\resources\rsa_key\id_key_rsa
+    # 公钥文件路径
+    publicKeyFilePath: D:\Users\Administrator\IdeaProjects\sso\common\src\main\resources\rsa_key\id_key_rsa.pub
